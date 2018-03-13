@@ -1,0 +1,56 @@
+<resources>
+
+    <string name="app_name">Assesments</string>
+    <string name="introduction">Introduction</string>
+    <string name="intro_text">uhjrfnc fdjkbvnc kkjdnc
+        kjnkdfbvkfkdjfvnlcsdvdz lkjdv kdsfjvnkdf dnkvdfjdfkv.fdmvlkdfmvdf
+        vksdfjvndfvdkljvndfvfdm fkjlfvnd
+        vdfkjlbvnflurvnjijferfjvlmfnvlaiunlv vkjsdfhdsfbdsjkvbyugrvscjskdbjjcadshjhdsbc
+        klshdfhiuineclskjbhdsvkdfjv kdfuvndfklvldfvhnkdj iulvhfdnvjvliun vuhnd dfiuvhdnf
+        vldfvnjd dfdlfiuvnj ushfvnfdkvjn kiuvhdnk   vl vdfvv    lvbf vfvljdfvn dfvidfuh fdvfd vfdvfv
+        vledrvnfdlvsudher v;fdlvijfkvn d   fvdfiv   dfhvndvdf v   ;df dfv;dfhv dfv vfdv
+        vlrdhunlesiurvhrvnreleurh    ;rogijdfvd v g g;dofij    dfovijdf vv   ;eorijvdf vfd vdf v;dofvij df
+        erlihveilfervervkdfjvbdnleriuvhievnneigrhverv dfskjvn dfviduhvjdofivj dfvdfovj dfvodf v dvfdv    vdfvoik
+        vdflkvhndkfvdoiuvhrnvn</string>
+
+    <string name="facts_text">uhjrfnc fdjkbvnc kkjdnc
+        kjnkdfbvkfkdjfvnlcsdvdz lkjdv kdsfjvnkdf dnk
+        vlievhnldfv erudekfhvnkieurhvuevkdf
+        vleiuvnhleirudfhiuvleiruhfnvfovierv vlduhvjnd fvdfv   dfuvh dfvudfivh fdvfhduvidf vih
+        efoivjervjdfviojo dflkjvknsdifuvndf osilfvj dfuhdnfv fvhdf vdfivjdf vdfoivjdf vv
+        vdfuhvndflviudfvnhudfvliuerhverinvfdvdfuvherjnvlidfuvhdfunvdfvfdvdfiluvhnvdfjdfkv.fdmvlkdfmvdf
+        vksdfjvndfvdkljvndfvfdm fkjlfvnd
+        vdfkjlbvnflurvnjijferfjvlmfnvlaiunlv vvkifvhdnfuivhervkdvudfndlfiuhnv dfkjshlviufdnvdfv
+        kjdfvhbdkdusfvbdfkjvnkdfvdfvvfdvijenrliuvhnfdkjlvsidruvgervjnfvdlvunjfiurghlnfvd fvyugfvuudfhvnlkdfv liudfv
+        vkdfuvhfnudilsvifudhvkidnfidfuvhuevnfd
+        vdflkvhndkfvdoiuvhrnvn  helloo</string>
+
+    <string name="facts">Science Facts</string>
+    <string name="begin_btn">Begin</string>
+    <string name="about_assessment">About this Assessment</string>
+    <string name="text_about">   kjnkdfbvkfkdjfvnlcsdvdz lkjdv kdsfjvnkdf dnk
+        vlievhnldfv erudekfhvnkieurhvuevkdf
+        vleiuvnhleirudfhiuvleiruhfnvfovierv vlduhvjnd fvdfv   dfuvh dfvudfivh fdvfhduvidf vih
+        efoivjervjdfviojo dflkjvknsdifuvndf osilfvj dfuhdnfv fvhdf vdfivjdf vdfoivjdf vv
+        vdfuhvndflviudfvnhudfvliuerhverinvfdvdfuvherjnvlidfuvhdfunvdfvfdvdfiluvhnvdfjdfkv.fdmvlkdfmvdf
+        vksdfjvndfvdkljvndfvfdm fkjlfvnd
+        vdfkjlbvnflurvnjijferfjvlmfnvlaiunlv vvkifvhdnfuivhervkdvudfndlfiuhnv dfkjshlviufdnvdfv
+        kjdfvhbdkdusfvbdfkjvnkdfvdfvvfdvijenrliuvhnfdkjlvsidruvgervjnfvdlvunjfiurghlnfvd fvyugfvuudfhvnlkdfv liudfv
+        vkdfuvhfnudilsvifudhvkidnfidfuvhuevnfd
+        vdflkvhndkfvdoiuvhrnvn  helloo</string>
+    <string name="pager_image">pager image 1</string>
+    <string name="scroll_text">this vector to scroll down text of about this assessment</string>
+    <string name="description_text">description text here</string>
+    <string name="description_icon">more to slide horizontally</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_first_assessment">first_assessment</string>
+    <string name="submit">Submit</string>
+    <string name="previous">Previous</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="congrats">Congratulations</string>
+    <string name="title_activity_assessment_result">assessment_result</string>
+    <string name="suggested_skills"> Suggested Skills for you </string>
+</resources>
+
