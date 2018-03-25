@@ -1,9 +1,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -14,41 +14,41 @@
         android:id="@+id/section_label"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        android:text="a question here "
         android:layout_gravity="center"
+        android:layout_weight="1"
         android:gravity="center"
+        android:text="@string/assessment_Q"
         android:textStyle="bold"
        />
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="3"
-        android:layout_marginTop="10dp">
+        android:layout_marginTop="10dp"
+        android:layout_weight="3">
     </android.support.v7.widget.CardView>
 
     <android.support.constraint.ConstraintLayout
+        android:id="@+id/bottomButtonsConstraints"
+        style="@style/Base.Widget.AppCompat.ButtonBar"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_marginTop="10dp"
         android:layout_weight="1"
         android:orientation="horizontal"
-        style="@style/Base.Widget.AppCompat.ButtonBar"
-        android:id="@+id/bottomButtonsConstraints"
-        tools:layout_editor_absoluteY="399dp"
         tools:layout_editor_absoluteX="16dp"
-        android:layout_marginTop="10dp">
+        tools:layout_editor_absoluteY="399dp">
 
         <Button
             android:id="@+id/previous"
+            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="100dp"
             android:layout_height="60dp"
-            style="?android:attr/buttonBarButtonStyle"
             android:text="@string/previous"
-            app:layout_constraintRight_toLeftOf="@+id/submit_answer"
-            app:layout_constraintLeft_toLeftOf="parent"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:textStyle="bold"/>
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/submit_answer"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/submit_answer"
@@ -56,11 +56,11 @@
             android:layout_width="100dp"
             android:layout_height="60dp"
             android:text="@string/submit"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintLeft_toRightOf="@+id/previous"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/previous"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             />
     </android.support.constraint.ConstraintLayout>
 

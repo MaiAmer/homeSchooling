@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:columnCount="2"
+    android:rowCount="2">
+
+    <TextView
+        android:id="@+id/discover_assessments"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_rowWeight="1"
+        android:background="@drawable/rectangle"
+        android:elevation="10dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:text="@string/discover_assessments_txt" />
+
+
+    <TextView
+        android:id="@+id/done_assessments"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_rowWeight="1"
+        android:background="@drawable/rectangle"
+        android:elevation="10dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:text="@string/done_assessments_txt" />
+
+    <TextView
+        android:id="@+id/howToDo_assessment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_rowWeight="1"
+        android:background="@drawable/rectangle"
+        android:elevation="10dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:text="@string/howToDo_assessments_txt" />
+
+    <TextView
+        android:id="@+id/overAll_Report"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_rowWeight="1"
+        android:background="@drawable/rectangle"
+        android:elevation="10dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:text="@string/OverAll_report_txt" />
+
+</GridLayout>

@@ -1,13 +1,13 @@
 package com.example.mayouza.activities;
 
-import android.support.v7.app.AppCompatActivity;
+import android.app.Activity;
 import android.os.Bundle;
 
-public class Assments extends AppCompatActivity {
+public class main_assessments extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.layout);
+        setContentView(R.layout.activity_main_assessments);
     }
 }

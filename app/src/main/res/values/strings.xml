@@ -28,7 +28,7 @@
     <string name="facts">Science Facts</string>
     <string name="begin_btn">Begin</string>
     <string name="about_assessment">About this Assessment</string>
-    <string name="text_about">   kjnkdfbvkfkdjfvnlcsdvdz lkjdv kdsfjvnkdf dnk
+    <string name="text_about_Assessment_category">   kjnkdfbvkfkdjfvnlcsdvdz lkjdv kdsfjvnkdf dnk
         vlievhnldfv erudekfhvnkieurhvuevkdf
         vleiuvnhleirudfhiuvleiruhfnvfovierv vlduhvjnd fvdfv   dfuvh dfvudfivh fdvfhduvidf vih
         efoivjervjdfviojo dflkjvknsdifuvndf osilfvj dfuhdnfv fvhdf vdfivjdf vdfoivjdf vv
@@ -52,5 +52,12 @@
     <string name="congrats">Congratulations</string>
     <string name="title_activity_assessment_result">assessment_result</string>
     <string name="suggested_skills"> Suggested Skills for you </string>
+    <string name="done_assessments_txt">Done Assessments</string>
+    <string name="discover_assessments_txt">Discover Assessments</string>
+    <string name="OverAll_report_txt">OverAll Report</string>
+    <string name="howToDo_assessments_txt">How to do Assessments</string>
+    <string name="assessment_Q"> question here</string>
+    <string name="DiscoverAsssessment_categoryName">Name of the assessment category</string>
+    <string name="photo_of_assessmentCategory">this is the photo of the Assessment category</string>
 </resources>
 
