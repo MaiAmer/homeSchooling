@@ -57,7 +57,11 @@
     <string name="OverAll_report_txt">OverAll Report</string>
     <string name="howToDo_assessments_txt">How to do Assessments</string>
     <string name="assessment_Q"> question here</string>
-    <string name="DiscoverAsssessment_categoryName">Name of the assessment category</string>
+    <string name="DiscoverAsssessment_categoryName1">Name of the assessment category 1</string>
+    <string name="DiscoverAsssessment_categoryName2">Name of the assessment category 2</string>
+    <string name="DiscoverAsssessment_categoryName3">Name of the assessment category 3</string>
     <string name="photo_of_assessmentCategory">this is the photo of the Assessment category</string>
+    <string name="title_activity_discover">discover</string>
+    <string name="title_activity_discover_assessment">discoverAssessment</string>
 </resources>
 
