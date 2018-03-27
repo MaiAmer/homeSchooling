@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-public class main_assessments extends Activity {
+public class MainAssessmentsActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +23,7 @@ public class main_assessments extends Activity {
         doneTxt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), done_assessments.class);
+                Intent intent = new Intent(getApplicationContext(), DoneAssessmentsActivity.class);
                 startActivity(intent);
             }
         });
@@ -31,7 +31,7 @@ public class main_assessments extends Activity {
         discoverTxt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), discoverAssessment.class);
+                Intent intent = new Intent(getApplicationContext(), DiscoverAssessmentsActivity.class);
                 startActivity(intent);
             }
         });
@@ -39,14 +39,14 @@ public class main_assessments extends Activity {
         overAllTxt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), done_assessments.class);
+                Intent intent = new Intent(getApplicationContext(), DoneAssessmentsActivity.class);
                 startActivity(intent);
             }
         });
         howToTxt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), how_to.class);
+                Intent intent = new Intent(getApplicationContext(), HowToDoAssessmentActivity.class);
                 startActivity(intent);
             }
         });

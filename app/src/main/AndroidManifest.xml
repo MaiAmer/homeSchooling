@@ -11,7 +11,7 @@
         android:theme="@style/AppTheme">
 
         <activity
-            android:name=".how_to"
+            android:name=".HowToDoAssessmentActivity"
             android:label="How to do Assessment">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,7 +20,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".done_assessments"
+        <activity android:name=".DoneAssessmentsActivity"
 
             />
 
@@ -51,9 +51,9 @@
         </activity>
 
         <activity
-            android:name=".assessment_result"
+            android:name=".AssessmentResultActivity"
             android:label="Assessment Result"
-            android:parentActivityName=".done_assessments"
+            android:parentActivityName=".DoneAssessmentsActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -62,7 +62,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".main_assessments">
+        <activity android:name=".MainAssessmentsActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -70,7 +70,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".discoverAssessment"
+            android:name=".DiscoverAssessmentsActivity"
             android:label="@string/title_activity_discover_assessment"
             android:theme="@style/AppTheme.NoActionBar" />
 

@@ -3,7 +3,7 @@ package com.example.mayouza.activities;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class how_to extends AppCompatActivity {
+public class HowToDoAssessmentActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
