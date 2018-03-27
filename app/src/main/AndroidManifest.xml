@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity
             android:name=".how_to"
             android:label="How to do Assessment">
@@ -18,7 +19,11 @@
                 <category android:name="android.intent.category.ALTERNATIVE" />
             </intent-filter>
         </activity>
-        <activity android:name=".done_assessments" />
+
+        <activity android:name=".done_assessments"
+
+            />
+
         <activity
             android:name=".CategoryName"
             android:label="category Name">
@@ -28,6 +33,7 @@
                 <category android:name="android.intent.category.ALTERNATIVE" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".first_assessment"
             android:label="@string/title_activity_first_assessment"
@@ -43,6 +49,7 @@
                 <category android:name="android.intent.category.ALTERNATIVE" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".assessment_result"
             android:label="Assessment Result"
@@ -51,20 +58,29 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.ALTERNATIVE" />
             </intent-filter>
         </activity>
+
         <activity android:name=".main_assessments">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.ALTERNATIVE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".discoverAssessment"
+            android:label="@string/title_activity_discover_assessment"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".discoverAssessment"
-            android:label="@string/title_activity_discover_assessment"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
