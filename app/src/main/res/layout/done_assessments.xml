@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/card_view"
+    android:id="@+id/done_card"
     android:layout_width="match_parent"
     android:layout_height="200dp"
     android:layout_gravity="center"
@@ -25,6 +23,7 @@
             android:text="first assessment "
             android:fontFamily="sans-serif"
             android:textSize="30sp"
+            android:id="@+id/done_Text"
             />
         <ProgressBar
             android:layout_width="match_parent"
@@ -33,6 +32,8 @@
             style="?android:attr/progressBarStyleHorizontal"
             android:layout_marginEnd="10dp"
             android:layout_marginStart="10dp"
-            android:layout_marginBottom="10dp"/>
+            android:id="@+id/done_progBar"
+            android:layout_marginBottom="10dp"
+            android:progress="0" />
     </LinearLayout>
     </android.support.v7.widget.CardView>

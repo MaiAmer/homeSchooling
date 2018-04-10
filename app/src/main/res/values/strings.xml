@@ -28,7 +28,7 @@
     <string name="facts">Science Facts</string>
     <string name="begin_btn">Begin</string>
     <string name="about_assessment">About this Assessment</string>
-    <string name="text_about_Assessment_category">   kjnkdfbvkfkdjfvnlcsdvdz lkjdv kdsfjvnkdf dnk
+    <string name="text_about_Assessment">   kjnkdfbvkfkdjfvnlcsdvdz lkjdv kdsfjvnkdf dnk
         vlievhnldfv erudekfhvnkieurhvuevkdf
         vleiuvnhleirudfhiuvleiruhfnvfovierv vlduhvjnd fvdfv   dfuvh dfvudfivh fdvfhduvidf vih
         efoivjervjdfviojo dflkjvknsdifuvndf osilfvj dfuhdnfv fvhdf vdfivjdf vdfoivjdf vv
@@ -61,7 +61,31 @@
     <string name="DiscoverAsssessment_categoryName2">Name of the assessment category 2</string>
     <string name="DiscoverAsssessment_categoryName3">Name of the assessment category 3</string>
     <string name="photo_of_assessmentCategory">this is the photo of the Assessment category</string>
-    <string name="title_activity_discover">discover</string>
-    <string name="title_activity_discover_assessment">discoverAssessment</string>
+    <string name="start_assessment">Start this Assessment</string>
+    <string name="title_activity_start_first_assessment">start_first_assessment</string>
+    <string name="title_activity_start_assessment_cat1">start_assessment_cat1</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="congrats_text">1) Initialize x as root.
+2) While x is not leaf, do following
+..a) Find the child of x that is going to be traversed next. Let the child be y.
+..b) If y is not full, change x to point to y.
+..c) If y is full, split it and change x to point to one of the two parts of y.
+        If k is smaller than mid key in y, then set x as first part of y. Else second part of
+        y. When we split y, we move a key from y to its parent x.
+3) The loop in step 2 stops when x is leaf. x must have space for 1 extra key as we have been splitting
+        all nodes in advance. So simply insert k to x.
+</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_discover_assessment">discover_assessment</string>
+    <string name="skill_1"> skill 1 </string>
+    <string name="skill_2"> skill 2 </string>
+    <string name="skill_3"> skill 3 </string>
+    <string name="done"> 2</string>
+    <string name="enrolled"> 2</string>
+    <string name="mastered"> 2</string>
+
 </resources>
 
