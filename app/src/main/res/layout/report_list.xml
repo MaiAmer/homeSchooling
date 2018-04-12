@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circle"
+                android:text="5"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:id="@+id/nDone"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="done assessments"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circle"
+                android:text="5"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:id="@+id/nEnrolled"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="enrolled skills"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="18sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circle"
+            android:text="5"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:id="@+id/nMastered"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mastered skills"
+            android:layout_marginStart="15dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Skills"
+            android:layout_margin="10dp"
+            android:textSize="40sp"
+            android:id="@+id/skills"/>
+
+    </LinearLayout>
+</FrameLayout>
