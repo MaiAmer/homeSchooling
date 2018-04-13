@@ -10,45 +10,43 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 
-public class discover_fragment extends Fragment {
+public class discover_fragment2 extends Fragment {
 
-    private static discover_fragment instance = null;
+    private static discover_fragment2 instance = null;
 
-    //Create fragment view when paginated.
-
+    // Create fragment view when paginated.
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_discover_assessment, container, false);
 
         TextView title = (TextView) v.findViewById(R.id.discoverTxt);
-        title.setText("msg");
+        title.setText(getArguments().getString("msg"));
 
 
         ImageView imageView = (ImageView) v.findViewById(R.id.discoverImg);
-        imageView.setImageResource(getArguments().getInt("id"));
+        imageView.setImageResource(getArguments().getInt("1"));
 
         TextView textView2 = (TextView) v.findViewById(R.id.describe_assessment);
-        textView2.setText("msg");
-
+        textView2.setText(getArguments().getString("msg"));
 
         return v;
     }
 
 
-    //Returns new instance.
+    // Returns new instance.
 
-    public static discover_fragment newInstance(String title , String desc , int imgID){
+    public static discover_fragment2 newInstance(String title , String desc , int imgID){
 
         if(instance == null){
             // new instance
-            instance = new discover_fragment();
+            instance = new discover_fragment2();
 
             // sets data to bundle
             Bundle bundle = new Bundle();
             bundle.putString("msg", title);
             bundle.putString("msg", desc);
-            bundle.putInt("msg", imgID);
+            bundle.putInt("1", imgID);
 
             // set data to fragment
             instance.setArguments(bundle);

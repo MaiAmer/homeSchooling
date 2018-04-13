@@ -26,16 +26,16 @@ public class assessment_cat1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.assessment_cat1);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+       /* Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         if(getSupportActionBar() != null){
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
         getSupportActionBar().setHomeButtonEnabled(true);
-
+*/
         expandableTxt = (TextView) findViewById(R.id.txtAboutAssessment);
         expandBtn=(ImageView)findViewById(R.id.expand_about_Assessment) ;
-        expandBtn.setOnClickListener(new View.OnClickListener() {
+      /*  expandBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                     expand = true;
@@ -46,13 +46,13 @@ public class assessment_cat1 extends AppCompatActivity {
             }
 
         });
-        startBtn.setOnClickListener(new View.OnClickListener() {
+         startBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), start_assessment_cat1.class);
                 startActivity(intent);
             }
-        });
+        }); */
     }
 
 
