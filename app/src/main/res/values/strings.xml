@@ -87,6 +87,14 @@
     <string name="enrolled"> 2</string>
     <string name="mastered"> 2</string>
     <string name="title_activity_skills_main">skills_main</string>
+    <string name="skill_intro_txt">ljfdcnliuhacndauhnvccdliudsncidsncsiducndscsdijcscnskcnscsaiuchsdnlcuifuvhcnflaiuafvhndfluidfavnfikvnsdvufdivndduvihnefuhdnlkd iudf sdifuvhsvnsikvnelirvnv ieun ieuvnieuverivldfncas</string>
+    <string name="skill_req_txt">kjfchdnfiaudfnv ddfuinvfiundfavk liuafdhvn ieulfkhdn laiufvhnLFDIVNFdlkvndfvDLFIDHNDFLKV DFLVJKADV</string>
+    <string name="req">Requirements</string>
+    <string name="skill_time">Required time to be efficient</string>
+    <string name="skill_time_txt">reqiured time to be good at this skll goes from 8 to 10 days by practicing every day</string>
+    <string name="skill_process_txt">process of this skilll is kjfewhnckblaikdv</string>
+    <string name="process">Process</string>
+    <string name="start_skill">Start this skill</string>
 
 </resources>
 
