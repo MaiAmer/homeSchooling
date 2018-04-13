@@ -61,6 +61,17 @@ public class discover_assessment extends FragmentActivity
     @Override
     public void onPageScrollStateChanged(int position) {
 
+        switch (position) {
+            case CAT_1: // show 1 category fragment
+                  discover_fragment.newInstance(String.valueOf(R.string.DiscoverAsssessment_categoryName1),
+                        String.valueOf(R.string.about_assessment),R.drawable.image);
+            case CAT_2: //show second category fragment
+                  discover_fragment2.newInstance(String.valueOf(R.string.DiscoverAsssessment_categoryName2),
+                        String.valueOf(R.string.about_assessment),R.drawable.image);
+            default: // default first one
+                  discover_fragment_default.newInstance(String.valueOf(R.string.DiscoverAsssessment_categoryName1),
+                        String.valueOf(R.string.about_assessment),R.drawable.image);
+        }
     }
 
      // Custom PagerAdapter class
@@ -71,7 +82,7 @@ public class discover_assessment extends FragmentActivity
             super(fm);
         }
 
-        //Return fragment based on the position.
+        //Return fragment based on the position....
 
         @Override
         public Fragment getItem(int position) {
@@ -83,7 +94,7 @@ public class discover_assessment extends FragmentActivity
                     return  discover_fragment2.newInstance(String.valueOf(R.string.DiscoverAsssessment_categoryName2),
                             String.valueOf(R.string.about_assessment),R.drawable.image);
                     default: // default first one
-                        return  discover_fragment.newInstance(String.valueOf(R.string.DiscoverAsssessment_categoryName1),
+                        return  discover_fragment_default.newInstance(String.valueOf(R.string.DiscoverAsssessment_categoryName1),
                                 String.valueOf(R.string.about_assessment),R.drawable.image);
             }
         }
