@@ -32,10 +32,10 @@ public class assessment_cat1 extends AppCompatActivity {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
         getSupportActionBar().setHomeButtonEnabled(true);
-*/
+
         expandableTxt = (TextView) findViewById(R.id.txtAboutAssessment);
         expandBtn=(ImageView)findViewById(R.id.expand_about_Assessment) ;
-      /*  expandBtn.setOnClickListener(new View.OnClickListener() {
+       expandBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                     expand = true;

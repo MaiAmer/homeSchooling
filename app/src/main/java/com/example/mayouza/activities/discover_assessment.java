@@ -2,83 +2,62 @@ package com.example.mayouza.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
+import android.view.MenuItem;
 
 
+public class discover_assessment extends AppCompatActivity {
 
-public class discover_assessment extends FragmentActivity
-        implements ViewPager.OnPageChangeListener{
-
-    private static final int NUMBER_OF_PAGES = 3;
-    //private RadioGroup radioGroup;
     ViewPager pager;
-    private static final int CAT_1 = 0;
-    private static final int CAT_2 = 1;
+
+    private sectionPagerAdapter sectionPagerAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_discover_assessment);
 
+        sectionPagerAdapter = new sectionPagerAdapter(getSupportFragmentManager());
+
         pager = (ViewPager) findViewById(R.id.discoverViewPager);
-        pager.setAdapter(new MyPagerAdapter(getSupportFragmentManager()));
-        pager.addOnPageChangeListener(this);
+        pager.setAdapter(sectionPagerAdapter);
+
+        TabLayout tabLayout = (TabLayout) findViewById(R.id.tabDots);
+        tabLayout.setupWithViewPager(pager);
 
     }
 
-
-     // When the current page is scrolled
     @Override
-    public void onPageScrolled(int position, float v, int i) {
+    public boolean onCreateOptionsMenu(Menu menu) {
+
+        getMenuInflater().inflate(R.menu.menu_discover_assessment, menu);
+        return true;
 
     }
 
-    //When a new page becomes selected
-
     @Override
-    public void onPageSelected(int position) {
-        switch(position) {
-            case CAT_1:
-
-                Intent intent = new Intent(getApplicationContext(), assessment_cat1.class);
-                startActivity(intent);
-                break;
-            case CAT_2:
-                Intent intent2 = new Intent(getApplicationContext(), assessment_cat1.class);
-                startActivity(intent2);
-                break;
-            default:
-                Intent intent0 = new Intent(getApplicationContext(), assessment_cat1.class);
-                startActivity(intent0);
+    public boolean onOptionsItemSelected(MenuItem menuItem) {
+        int id = menuItem.getItemId();
+        if (id == R.id.action_settings) {
+            return true;
         }
+        return super.onOptionsItemSelected(menuItem);
     }
 
-    // When the pager is automatically setting to the current page
-    @Override
-    public void onPageScrollStateChanged(int position) {
 
-        switch (position) {
-            case CAT_1: // show 1 category fragment
-                  discover_fragment.newInstance(String.valueOf(R.string.DiscoverAsssessment_categoryName1),
-                        String.valueOf(R.string.about_assessment),R.drawable.image);
-            case CAT_2: //show second category fragment
-                  discover_fragment2.newInstance(String.valueOf(R.string.DiscoverAsssessment_categoryName2),
-                        String.valueOf(R.string.about_assessment),R.drawable.image);
-            default: // default first one
-                  discover_fragment_default.newInstance(String.valueOf(R.string.DiscoverAsssessment_categoryName1),
-                        String.valueOf(R.string.about_assessment),R.drawable.image);
-        }
-    }
-
+}
      // Custom PagerAdapter class
 
-    private class MyPagerAdapter extends FragmentPagerAdapter{
+     class sectionPagerAdapter extends FragmentPagerAdapter{
 
-        public MyPagerAdapter(FragmentManager fm) {
+        public sectionPagerAdapter(FragmentManager fm) {
             super(fm);
         }
 
@@ -87,26 +66,24 @@ public class discover_assessment extends FragmentActivity
         @Override
         public Fragment getItem(int position) {
             switch (position) {
-                case CAT_1: // show 1 category fragment
-                    return  discover_fragment.newInstance(String.valueOf(R.string.DiscoverAsssessment_categoryName1),
-                            String.valueOf(R.string.about_assessment),R.drawable.image);
-                case CAT_2: //show second category fragment
-                    return  discover_fragment2.newInstance(String.valueOf(R.string.DiscoverAsssessment_categoryName2),
-                            String.valueOf(R.string.about_assessment),R.drawable.image);
-                    default: // default first one
-                        return  discover_fragment_default.newInstance(String.valueOf(R.string.DiscoverAsssessment_categoryName1),
-                                String.valueOf(R.string.about_assessment),R.drawable.image);
+                case 0: // show 1 category fragment
+                    discover_fragment frag1 = new discover_fragment();
+                    return frag1;
+                case 1: //show second category fragment
+                    discover_fragment2 frag2 = new discover_fragment2();
+                    return frag2;
+                default: // default first one
+                    discover_fragment_default frag_default = new discover_fragment_default();
+                    return frag_default;
             }
         }
 
         //Return the number of pages.
         @Override
         public int getCount() {
-            return NUMBER_OF_PAGES;
+            return 3;
         }
 
 
     }
 
-
-}
