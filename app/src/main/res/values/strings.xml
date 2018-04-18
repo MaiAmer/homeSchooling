@@ -2,42 +2,30 @@
 
     <string name="app_name">Assesments</string>
     <string name="introduction">Introduction</string>
-    <string name="intro_text">uhjrfnc fdjkbvnc kkjdnc
-        kjnkdfbvkfkdjfvnlcsdvdz lkjdv kdsfjvnkdf dnkvdfjdfkv.fdmvlkdfmvdf
-        vksdfjvndfvdkljvndfvfdm fkjlfvnd
-        vdfkjlbvnflurvnjijferfjvlmfnvlaiunlv vkjsdfhdsfbdsjkvbyugrvscjskdbjjcadshjhdsbc
-        klshdfhiuineclskjbhdsvkdfjv kdfuvndfklvldfvhnkdj iulvhfdnvjvliun vuhnd dfiuvhdnf
-        vldfvnjd dfdlfiuvnj ushfvnfdkvjn kiuvhdnk   vl vdfvv    lvbf vfvljdfvn dfvidfuh fdvfd vfdvfv
-        vledrvnfdlvsudher v;fdlvijfkvn d   fvdfiv   dfhvndvdf v   ;df dfv;dfhv dfv vfdv
-        vlrdhunlesiurvhrvnreleurh    ;rogijdfvd v g g;dofij    dfovijdf vv   ;eorijvdf vfd vdf v;dofvij df
-        erlihveilfervervkdfjvbdnleriuvhievnneigrhverv dfskjvn dfviduhvjdofivj dfvdfovj dfvodf v dvfdv    vdfvoik
-        vdflkvhndkfvdoiuvhrnvn</string>
+    <string name="intro_text">you can wait to write your introductory paragraph until you \n
+        are done with the body of the paper. Some people prefer to do it this way since they /n
+        want to know exactly where their paper goes before they make an introduction to it. \n
+        When you write your introductory paragraph is a matter of personal preference. \n
+        Your introductory paragraph needs to accomplish three main things: it must \n
+        1.grip your reader, \n
+        2. introduce your topic, and 3. present your stance on the topic (in the form of your thesis statement).
+        If you’re writing a large academic paper, you’ll also want to contextualize
+        your paper’s claim by discussing points other writers have made on the topic</string>
 
-    <string name="facts_text">uhjrfnc fdjkbvnc kkjdnc
-        kjnkdfbvkfkdjfvnlcsdvdz lkjdv kdsfjvnkdf dnk
-        vlievhnldfv erudekfhvnkieurhvuevkdf
-        vleiuvnhleirudfhiuvleiruhfnvfovierv vlduhvjnd fvdfv   dfuvh dfvudfivh fdvfhduvidf vih
-        efoivjervjdfviojo dflkjvknsdifuvndf osilfvj dfuhdnfv fvhdf vdfivjdf vdfoivjdf vv
-        vdfuhvndflviudfvnhudfvliuerhverinvfdvdfuvherjnvlidfuvhdfunvdfvfdvdfiluvhnvdfjdfkv.fdmvlkdfmvdf
-        vksdfjvndfvdkljvndfvfdm fkjlfvnd
-        vdfkjlbvnflurvnjijferfjvlmfnvlaiunlv vvkifvhdnfuivhervkdvudfndlfiuhnv dfkjshlviufdnvdfv
-        kjdfvhbdkdusfvbdfkjvnkdfvdfvvfdvijenrliuvhnfdkjlvsidruvgervjnfvdlvunjfiurghlnfvd fvyugfvuudfhvnlkdfv liudfv
-        vkdfuvhfnudilsvifudhvkidnfidfuvhuevnfd
-        vdflkvhndkfvdoiuvhrnvn  helloo</string>
+    <string name="facts_text">Like writing the title, you can wait to write your introductory paragraph until you \n
+        are done with the body of the paper. Some people prefer to do it this way since they /n
+        want to know exactly where their paper goes before they make an introduction to it. \n
+        When you write your introductory paragraph is a matter of personal preference. \n
+        Your introductory paragraph needs to accomplish three main things: it must \n
+        1.grip your reader, \n
+        2. introduce your topic, and 3. present your stance on the topic (in the form of your thesis statement).  \n
+        If you’re writing a large academic paper, you’ll also want to contextualize \n
+        your paper’s claim by discussing points other writers have made on the topic. \n</string>
 
     <string name="facts">Science Facts</string>
     <string name="begin_btn">Begin</string>
     <string name="about_assessment">About this Assessment</string>
-    <string name="text_about_Assessment">   kjnkdfbvkfkdjfvnlcsdvdz lkjdv kdsfjvnkdf dnk
-        vlievhnldfv erudekfhvnkieurhvuevkdf
-        vleiuvnhleirudfhiuvleiruhfnvfovierv vlduhvjnd fvdfv   dfuvh dfvudfivh fdvfhduvidf vih
-        efoivjervjdfviojo dflkjvknsdifuvndf osilfvj dfuhdnfv fvhdf vdfivjdf vdfoivjdf vv
-        vdfuhvndflviudfvnhudfvliuerhverinvfdvdfuvherjnvlidfuvhdfunvdfvfdvdfiluvhnvdfjdfkv.fdmvlkdfmvdf
-        vksdfjvndfvdkljvndfvfdm fkjlfvnd
-        vdfkjlbvnflurvnjijferfjvlmfnvlaiunlv vvkifvhdnfuivhervkdvudfndlfiuhnv dfkjshlviufdnvdfv
-        kjdfvhbdkdusfvbdfkjvnkdfvdfvvfdvijenrliuvhnfdkjlvsidruvgervjnfvdlvunjfiurghlnfvd fvyugfvuudfhvnlkdfv liudfv
-        vkdfuvhfnudilsvifudhvkidnfidfuvhuevnfd
-        vdflkvhndkfvdoiuvhrnvn  helloo</string>
+    <string name="text_about_Assessment"> this is assessment num 1 \n it require 2 hours to solve \n </string>
     <string name="pager_image">pager image 1</string>
     <string name="scroll_text">this vector to scroll down text of about this assessment</string>
     <string name="description_text">description text here</string>
@@ -62,8 +50,8 @@
     <string name="DiscoverAsssessment_categoryName3">Name of the assessment category 3</string>
     <string name="photo_of_assessmentCategory">this is the photo of the Assessment category</string>
     <string name="start_assessment">Start this Assessment</string>
-    <string name="title_activity_start_first_assessment">start_first_assessment</string>
-    <string name="title_activity_start_assessment_cat1">start_assessment_cat1</string>
+    <string name="title_activity_start_first_assessment">start first assessment</string>
+    <string name="title_activity_start_assessment_cat1">start assessment cat1</string>
     <string name="tab_text_1">earn skills </string>
     <string name="tab_text_2">recent skills</string>
     <string name="tab_text_3">tests</string>
@@ -79,7 +67,7 @@
 </string>
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="title_activity_discover_assessment">discover_assessment</string>
+    <string name="title_activity_discover_assessment">discover assessments</string>
     <string name="skill_1"> skill 1 </string>
     <string name="skill_2"> skill 2 </string>
     <string name="skill_3"> skill 3 </string>
@@ -96,6 +84,8 @@
     <string name="process">Process</string>
     <string name="start_skill">Start this skill</string>
     <string name="goTo_category">Go to Assessment</string>
+    <string name="OverAll_report">OverAll report</string>
+    <string name="q1_header">this is the header of question 1</string>
 
 </resources>
 

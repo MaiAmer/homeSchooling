@@ -20,7 +20,8 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:text="@string/introduction"
-            android:id="@+id/intro" />
+            android:id="@+id/intro"
+            android:textColor="#db3340"/>
 
         <TextView
             style="@style/text2Style"
@@ -37,7 +38,8 @@
             android:layout_height="50dp"
             android:text="@string/facts"
             android:id="@+id/facts"
-            android:layout_below="@+id/intro_text"/>
+            android:layout_below="@+id/intro_text"
+            android:textColor="#db3340"/>
 
 
         <TextView

@@ -17,8 +17,7 @@ import android.widget.TextView;
 public class assessment_cat1 extends AppCompatActivity {
 
     Button startBtn;
-    ImageView expandBtn;
-    Boolean expand = false;
+    ImageView img;
     TextView expandableTxt;
 
     @Override
@@ -26,33 +25,21 @@ public class assessment_cat1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.assessment_cat1);
 
-       /* Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-        if(getSupportActionBar() != null){
-            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        }
-        getSupportActionBar().setHomeButtonEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        img = (ImageView)  findViewById(R.id.firstAssesImg);
+        img.setImageResource(R.drawable.image);
 
         expandableTxt = (TextView) findViewById(R.id.txtAboutAssessment);
-        expandBtn=(ImageView)findViewById(R.id.expand_about_Assessment) ;
-       expandBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                    expand = true;
-                    ObjectAnimator animator = ObjectAnimator.ofInt(expandableTxt, "maxLines", 20);
-                    animator.setDuration(100).start();
-                    expandableTxt.setVisibility(View.VISIBLE);
-                    expandBtn.setImageDrawable(ResourcesCompat.getDrawable(getResources(), R.drawable.ic_expand_more_black_24dp, null));
-            }
+        expandableTxt.setText(getResources().getString(R.string.text_about_Assessment));
 
-        });
+         startBtn = (Button)findViewById(R.id.startAssessment);
          startBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), start_assessment_cat1.class);
                 startActivity(intent);
             }
-        }); */
+        });
     }
 
 

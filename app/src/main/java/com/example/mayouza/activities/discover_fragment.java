@@ -14,8 +14,6 @@ import android.widget.TextView;
 
 public class discover_fragment extends Fragment {
 
-    private static discover_fragment instance = null;
-
     //Create fragment view when paginated.
 
     @Nullable
