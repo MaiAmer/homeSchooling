@@ -19,22 +19,22 @@ public class quiz3 extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_quiz1_cat1, container, false);
-        TextView Qtitle = (TextView) v.findViewById(R.id.section_label);
+        TextView Qtitle = v.findViewById(R.id.section_label);
         Qtitle.setText(getResources().getString(R.string.assessment_Q));
 
-        TextView q1_header = (TextView) v.findViewById(R.id.q1_header);
+        TextView q1_header = v.findViewById(R.id.q1_header);
         q1_header.setText(getResources().getString(R.string.q1_header));
 
-        RadioGroup group = (RadioGroup)v.findViewById(R.id.answers_group);
-        RadioButton r1 = (RadioButton)v.findViewById(R.id.answer1);
-        r1.setText("here is answer 1");
-        RadioButton r2 = (RadioButton)v.findViewById(R.id.answer2);
-        r2.setText("here is answer 2");
-        RadioButton r3 = (RadioButton)v.findViewById(R.id.answer3);
-        r3.setText("here is answer 3");
+        RadioGroup group = v.findViewById(R.id.answers_group);
+        RadioButton r1 = v.findViewById(R.id.answer1);
+        r1.setText(getResources().getString(R.string.q1_header));
+        RadioButton r2 = v.findViewById(R.id.answer2);
+        r2.setText(getResources().getString(R.string.q1_header));
+        RadioButton r3 = v.findViewById(R.id.answer3);
+        r3.setText(getResources().getString(R.string.q1_header));
 
-        Button prev = (Button)v.findViewById(R.id.previous);
-        Button next = (Button)v.findViewById(R.id.submit_answer);
+        Button prev = v.findViewById(R.id.previous);
+        Button next = v.findViewById(R.id.submit_answer);
 
 
         return v;

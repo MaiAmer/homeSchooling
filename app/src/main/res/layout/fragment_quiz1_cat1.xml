@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -12,7 +11,7 @@
         android:paddingTop="@dimen/activity_vertical_margin"
         tools:context=".start_assessment_cat1">
         <TextView
-            android:id="@+id/section_label"
+            android:id="@+id/titleQ"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
             android:layout_gravity="center"
@@ -41,24 +40,25 @@
                 android:id="@+id/q1_header"/>
 
             <RadioGroup
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="5"
                 android:id="@+id/answers_group">
                 <RadioButton
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="2"
                     android:text="here is answer 1 "
                     android:id="@+id/answer1"/>
                 <RadioButton
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="2"
                     android:text="here is answer 2 "
-                    android:id="@+id/answer2"/>
+                    android:id="@+id/answer2"
+                    />
                 <RadioButton
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="2"
                     android:text="here is answer 3 "
@@ -67,7 +67,7 @@
             </LinearLayout>
         </android.support.v7.widget.CardView>
 
-        <android.support.constraint.ConstraintLayout
+        <LinearLayout
             android:id="@+id/bottomButtonsConstraints"
             style="@style/Base.Widget.AppCompat.ButtonBar"
             android:layout_width="match_parent"
@@ -75,8 +75,7 @@
             android:layout_marginTop="10dp"
             android:layout_weight="1"
             android:orientation="horizontal"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="399dp">
+      >
 
             <Button
                 android:id="@+id/previous"
@@ -85,10 +84,8 @@
                 android:layout_height="60dp"
                 android:text="@string/previous"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toLeftOf="@+id/submit_answer"
-                app:layout_constraintTop_toTopOf="parent" />
+                android:layout_weight="1"
+                android:layout_margin="8dp"/>
 
             <Button
                 android:id="@+id/submit_answer"
@@ -97,12 +94,9 @@
                 android:layout_height="60dp"
                 android:text="@string/submit"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintLeft_toRightOf="@+id/previous"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                />
-        </android.support.constraint.ConstraintLayout>
+                android:layout_weight="1"
+                android:layout_margin="8dp"/>
+        </LinearLayout>
 
     </LinearLayout>
 

@@ -52,9 +52,9 @@
     <string name="start_assessment">Start this Assessment</string>
     <string name="title_activity_start_first_assessment">start first assessment</string>
     <string name="title_activity_start_assessment_cat1">start assessment cat1</string>
-    <string name="tab_text_1">earn skills </string>
-    <string name="tab_text_2">recent skills</string>
-    <string name="tab_text_3">tests</string>
+    <string name="tab_discover">Discover skills </string>
+    <string name="tab_recent">Recent skills</string>
+    <string name="tab_tests">Tests</string>
     <string name="congrats_text">1) Initialize x as root.
 2) While x is not leaf, do following
 ..a) Find the child of x that is going to be traversed next. Let the child be y.
@@ -86,6 +86,11 @@
     <string name="goTo_category">Go to Assessment</string>
     <string name="OverAll_report">OverAll report</string>
     <string name="q1_header">this is the header of question 1</string>
+    <string name="title_activity_test">test</string>
+    <string name="title_activity_skill_content">skill_content</string>
+    <string name="tab_lessons">Lessons</string>
+    <string name="tab_exercise">Exercise</string>
+    <string name="tab_about">About skill</string>
 
 </resources>
 

@@ -88,9 +88,8 @@
                 <category android:name="android.intent.category.ALTERNATIVE" />
             </intent-filter>
         </activity>
-
-
-        <activity android:name=".report_assessment_main"
+        <activity
+            android:name=".report_assessment_main"
             android:label="@string/OverAll_report">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -98,18 +97,14 @@
                 <category android:name="android.intent.category.ALTERNATIVE" />
             </intent-filter>
         </activity>
-
-
         <activity
             android:name=".skills_main"
-            android:label="@string/title_activity_skills_main"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            android:label="@string/title_activity_skills_main">
             <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.ALTERNATIVE" />
+                <category android:name="android.intent.category.ALTERNATIVE" />
             </intent-filter>
-
         </activity>
     </application>
 

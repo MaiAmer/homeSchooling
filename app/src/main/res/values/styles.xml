@@ -61,4 +61,9 @@
     <declare-styleable name="ExpandableTextView">
         <attr name="trimLength" format="integer" />
     </declare-styleable>
+
+    <style name="NoActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
 </resources>
