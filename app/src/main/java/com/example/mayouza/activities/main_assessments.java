@@ -28,13 +28,13 @@ public class main_assessments extends Activity {
             }
         });
 
-        discoverTxt.setOnClickListener(new View.OnClickListener() {
+      /*  discoverTxt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), discover_assessment.class);
                 startActivity(intent);
             }
-        });
+        }); */
 
         overAllTxt.setOnClickListener(new View.OnClickListener() {
             @Override

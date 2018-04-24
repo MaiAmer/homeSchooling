@@ -1,6 +1,6 @@
 package Fragments_Functionality;
 
-
+/*
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -12,6 +12,7 @@ import com.example.mayouza.activities.R;
 /**
  * A simple {@link Fragment} subclass.
  */
+/*
 public class DiscoverSkillsFragment extends Fragment {
 
 
@@ -28,3 +29,4 @@ public class DiscoverSkillsFragment extends Fragment {
     }
 
 }
+*/

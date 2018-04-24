@@ -39,26 +39,7 @@
                 <category android:name="android.intent.category.ALTERNATIVE" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".CategoryName"
-            android:label="category Name"
-            android:parentActivityName=".discover_assessment">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.ALTERNATIVE" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".assessment_cat1"
-            android:label="category 1 of assessments"
-            android:parentActivityName=".discover_assessment">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.ALTERNATIVE" />
-            </intent-filter>
-        </activity>
         <activity
             android:name=".assessment_result"
             android:label="Assessment Result"
@@ -70,36 +51,10 @@
                 <category android:name="android.intent.category.ALTERNATIVE" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".start_assessment_cat1"
-            android:label="@string/title_activity_start_assessment_cat1">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.ALTERNATIVE" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".discover_assessment"
-            android:label="@string/title_activity_discover_assessment">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.ALTERNATIVE" />
-            </intent-filter>
-        </activity>
+        
         <activity
             android:name=".report_assessment_main"
             android:label="@string/OverAll_report">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.ALTERNATIVE" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".skills_main"
-            android:label="@string/title_activity_skills_main">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -1,6 +1,5 @@
 package com.example.mayouza.activities;
 
-
 import android.animation.ObjectAnimator;
 import android.content.Intent;
 import android.support.v4.content.res.ResourcesCompat;
@@ -33,13 +32,13 @@ public class assessment_cat1 extends AppCompatActivity {
         expandableTxt.setText(getResources().getString(R.string.text_about_Assessment));
 
          startBtn = (Button)findViewById(R.id.startAssessment);
-         startBtn.setOnClickListener(new View.OnClickListener() {
+        /* startBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), start_assessment_cat1.class);
                 startActivity(intent);
             }
-        });
+        }); */
     }
 
 
