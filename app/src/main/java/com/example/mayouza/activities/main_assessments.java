@@ -15,10 +15,10 @@ public class main_assessments extends Activity {
         setContentView(R.layout.activity_main_assessments);
 
 
-        TextView doneTxt = (TextView) findViewById(R.id.done_assessments);
-        TextView discoverTxt = (TextView) findViewById(R.id.discover_assessments);
-        TextView overAllTxt = (TextView) findViewById(R.id.overAll_Report);
-        TextView howToTxt = (TextView) findViewById(R.id.howToDo_assessment);
+        TextView doneTxt = findViewById(R.id.done_assessments);
+        TextView discoverTxt = findViewById(R.id.discover_assessments);
+        TextView overAllTxt = findViewById(R.id.overAll_Report);
+        TextView howToTxt = findViewById(R.id.howToDo_assessment);
 
         doneTxt.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -28,13 +28,13 @@ public class main_assessments extends Activity {
             }
         });
 
-      /*  discoverTxt.setOnClickListener(new View.OnClickListener() {
+        discoverTxt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), discover_assessment.class);
+                Intent intent = new Intent(getApplicationContext(), discover_assessments_main.class);
                 startActivity(intent);
             }
-        }); */
+        });
 
         overAllTxt.setOnClickListener(new View.OnClickListener() {
             @Override
