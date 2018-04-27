@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.widget.Adapter;
 import android.widget.Button;
 
 import java.util.ArrayList;
@@ -23,12 +24,13 @@ public class discover_assessments_main extends AppCompatActivity implements disc
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_discover_assessments);
+        setContentView(R.layout.recycler_discover_assessments);
 
         // set up the RecyclerView
         RecyclerView discoverRecycler = findViewById(R.id.discoverRecycler);
         ModelArrayList = populateList();
         adapter = new discoverAssessmentsAdapter(this,ModelArrayList);
+        discoverRecycler.setAdapter(adapter);
         discoverRecycler.setLayoutManager(new LinearLayoutManager(getApplicationContext(),
                 LinearLayoutManager.HORIZONTAL,false));
 

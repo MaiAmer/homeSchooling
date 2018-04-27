@@ -16,10 +16,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class discoverAssessmentsAdapter extends RecyclerView.Adapter<discoverAssessmentsAdapter.ViewHolder> {
-    private int numOfCategories = 3;
+
     private ArrayList<discover_assessmnets_data> data;
     private LayoutInflater inflater;
-    Context mContext;
 
     public interface ClickListener {
 
@@ -37,7 +36,7 @@ public class discoverAssessmentsAdapter extends RecyclerView.Adapter<discoverAss
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = inflater.inflate(R.layout.recycler_discover_assessments, parent, false);
+        View view = inflater.inflate(R.layout.activity_discover_assessments, parent, false);
         return new ViewHolder(view);
     }
 
@@ -54,7 +53,7 @@ public class discoverAssessmentsAdapter extends RecyclerView.Adapter<discoverAss
     // total number of rows
     @Override
     public int getItemCount() {
-        return numOfCategories;
+        return data.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {

@@ -41,4 +41,5 @@
         android:layout_weight="1"
         android:layout_gravity="center_horizontal"
     android:text="Go to this assessment"/>
+
 </LinearLayout>
