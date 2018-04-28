@@ -19,18 +19,36 @@ public class discoverAssessmentsAdapter extends RecyclerView.Adapter<discoverAss
 
     private ArrayList<discover_assessmnets_data> data;
     private LayoutInflater inflater;
-
-    public interface ClickListener {
+    private ArrayList<String>titles;
+    private ArrayList<String>desc;
+    private ArrayList<Integer>imges;
+    private ArrayList<Integer> btnId;
+    Context context;
+  /*
+        these lines used if we used discover_assessment_data.java
+       public interface ClickListener {
 
         void onGoToClicked(View itemView , int position);
     }
-
+*/
     // data is passed into the constructor
-    public discoverAssessmentsAdapter(Context context,ArrayList<discover_assessmnets_data> data)
+ /*   public discoverAssessmentsAdapter(Context context,ArrayList<discover_assessmnets_data> data)
     {
+        this.context=context;
         inflater = LayoutInflater.from(context);
         this.data=data;
     }
+*/
+  public discoverAssessmentsAdapter(Context context,ArrayList<String>titles
+          ,ArrayList<String>desc,ArrayList<Integer>imgs,ArrayList<Integer>btns)
+  {
+      inflater = LayoutInflater.from(context);
+      this.context=context;
+      this.titles=titles;
+      this.desc=desc;
+      this.imges=imgs;
+      this.btnId=btns;
+  }
 
     // inflates the row layout from xml when needed
     @NonNull
@@ -42,18 +60,32 @@ public class discoverAssessmentsAdapter extends RecyclerView.Adapter<discoverAss
 
     // binds the data to the view
     @Override
-    public void onBindViewHolder(ViewHolder holder, int position) {
+    public void onBindViewHolder(ViewHolder holder, final int position) {
 
-        holder.title.setText(data.get(position).getTitle());
+    /*    holder.title.setText(data.get(position).getTitle());
         holder.desc.setText(data.get(position).getDesc());
         holder.img.setImageResource(data.get(position).getImgId());
+        */
 
+        holder.title.setText(titles.get(position));
+        holder.desc.setText(desc.get(position));
+        holder.img.setImageResource(imges.get(position));
+        holder.goToBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent( context, assessment_cat1.class);
+                intent.putExtra("title",titles.get(position));
+                intent.putExtra("img",imges.get(position));
+                intent.putExtra("button",btnId.get(position));
+                context.startActivity(intent);
+            }
+        });
     }
 
     // total number of rows
     @Override
     public int getItemCount() {
-        return data.size();
+        return titles.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
@@ -61,21 +93,15 @@ public class discoverAssessmentsAdapter extends RecyclerView.Adapter<discoverAss
         TextView desc;
         ImageView img;
         Button goToBtn;
-        private ClickListener clickHandler;
+      //  private ClickListener clickHandler;
 
         public ViewHolder(View itemView) {
             super(itemView);
             title = itemView.findViewById(R.id.discoverTxt);
             desc = itemView.findViewById(R.id.discover_description);
             img = itemView.findViewById(R.id.discoverImg);
-            goToBtn = itemView.findViewById(R.id.go_btn);
-           goToBtn.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    int position = getAdapterPosition();
-                  clickHandler.onGoToClicked(view,position);
-                }
-            });
+            goToBtn = itemView.findViewById(R.id.discoverGoTO);
+
         }
     }
 

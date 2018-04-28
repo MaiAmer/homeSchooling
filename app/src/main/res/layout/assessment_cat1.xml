@@ -38,7 +38,8 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="@string/about_assessment"
-                    android:textSize="20sp"/>
+                    android:textSize="20sp"
+                    android:id="@+id/aboutAssessment"/>
 
                 <ScrollView
                     android:layout_width="match_parent"

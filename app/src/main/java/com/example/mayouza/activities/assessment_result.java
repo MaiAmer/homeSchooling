@@ -18,7 +18,7 @@ public class assessment_result extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_assessment_result);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         this.setSupportActionBar(toolbar);
         if(getSupportActionBar() != null){
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -26,10 +26,10 @@ public class assessment_result extends AppCompatActivity {
         this.getSupportActionBar().setHomeButtonEnabled(true);
 
         CollapsingToolbarLayout collapsingToolbar =
-                (CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar);
+           findViewById(R.id.collapsing_toolbar);
         collapsingToolbar.setTitle("Assessment Result");
 
-        recyclerView =(RecyclerView)findViewById(R.id.result_recycler);
+        recyclerView =findViewById(R.id.result_recycler);
 
         mLayoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(mLayoutManager);
