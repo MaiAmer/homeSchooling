@@ -39,7 +39,6 @@
                 <category android:name="android.intent.category.ALTERNATIVE" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".assessment_result"
             android:label="Assessment Result"
@@ -51,7 +50,6 @@
                 <category android:name="android.intent.category.ALTERNATIVE" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".report_assessment_main"
             android:label="@string/OverAll_report">
@@ -61,8 +59,8 @@
                 <category android:name="android.intent.category.ALTERNATIVE" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".discover_assessments_main"
+        <activity
+            android:name=".discover_assessments_main"
             android:label="discover assessments">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -70,8 +68,6 @@
                 <category android:name="android.intent.category.ALTERNATIVE" />
             </intent-filter>
         </activity>
-
-
         <activity android:name=".assessment_cat1">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -79,7 +75,16 @@
                 <category android:name="android.intent.category.ALTERNATIVE" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Quiz1"
+            android:label="@string/title_activity_quiz1"
+            android:theme="@style/NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.ALTERNATIVE" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

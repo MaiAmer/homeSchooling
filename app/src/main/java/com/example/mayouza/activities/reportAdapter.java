@@ -24,9 +24,9 @@ public class reportAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
         public reportViewHolder(View itemView)
         {
             super(itemView);
-            enrolled= (TextView)itemView.findViewById(R.id.nEnrolled);
-            mastered= (TextView)itemView.findViewById(R.id.nMastered);
-            done= (TextView)itemView.findViewById(R.id.nDone);
+            enrolled = itemView.findViewById(R.id.nEnrolled);
+            mastered = itemView.findViewById(R.id.nMastered);
+            done = itemView.findViewById(R.id.nDone);
         }
 
         public TextView getDone() {
@@ -64,10 +64,10 @@ public class reportAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
         public reportViewHolder2(View itemView)
         {
             super(itemView);
-            skill_name= (TextView)itemView.findViewById(R.id.nameOfSkill);
-            effeciency= (TextView)itemView.findViewById(R.id.efficiencyPercent);
-            percent= (TextView)itemView.findViewById(R.id.percentOfSkill);
-            skills_card = (CardView)itemView.findViewById(R.id.skillsCard);
+            skill_name = itemView.findViewById(R.id.nameOfSkill);
+            effeciency = itemView.findViewById(R.id.efficiencyPercent);
+            percent = itemView.findViewById(R.id.percentOfSkill);
+            skills_card = itemView.findViewById(R.id.skillsCard);
 
         }
 

@@ -50,8 +50,6 @@ public class discover_assessments_main extends AppCompatActivity {
         discoverRecycler.setLayoutManager(new LinearLayoutManager(getApplicationContext(),
                 LinearLayoutManager.HORIZONTAL,false));
 
-
-
     }
 /*
     @Override

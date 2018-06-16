@@ -50,14 +50,22 @@ public class assessment_cat1 extends AppCompatActivity {
             if(title.contentEquals(" assessment category 3"))
             detailedDesc.setText("this is detailed desc of cat 3");
 
-            //TODo: add onClick listeners for buttons to open different quizzes
 
+        startBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Quiz1.class);
+                startActivity(intent);
+
+            }
+        });
    /*        Integer buttonValue = getIntent().getIntExtra("buttons",0);
            if(buttonValue==1)
            {
             Intent intent = new Intent(getApplicationContext(),assessment_quiz1);
            }
 */
+
     }
 
 }

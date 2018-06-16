@@ -16,10 +16,12 @@ public class report_assessment_main extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         setContentView(R.layout.recycler_report_assessment);
         // use a linear layout manager
 
-        recyclerView =(RecyclerView)findViewById(R.id.my_recycler_view);
+        recyclerView = findViewById(R.id.my_recycler_view);
 
         mLayoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(mLayoutManager);

@@ -12,6 +12,7 @@ public class done_assessments_data {
     public int getDoneCardId() {
         return doneCardId;
     }
+
     public void setDoneTitle(String doneTitle) {
         this.doneTitle = doneTitle;
     }

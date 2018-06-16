@@ -19,32 +19,30 @@
     android:layout_marginStart="40dp"
     android:layout_marginTop="20dp">
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
         <ImageView
-            android:id="@+id/suggestCard_image"
+            android:id="@+id/doneImage"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
             android:scaleType="centerCrop"
             tools:src="@drawable/image" />
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="2"
             android:layout_margin="10dp"
-            android:layout_centerHorizontal="true"
-            android:layout_centerInParent="true"
             android:gravity="center"
             android:text="first assessment "
             android:fontFamily="sans-serif"
             android:textSize="30sp"
             android:id="@+id/done_Text"
-            android:textAppearance="@style/TextAppearance.AppCompat.Title"
-            android:textColor="#fff"
             />
 
-    </RelativeLayout>
+    </LinearLayout>
 
     </android.support.v7.widget.CardView>
 

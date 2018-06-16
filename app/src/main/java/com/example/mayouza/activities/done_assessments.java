@@ -18,8 +18,8 @@ public class done_assessments extends AppCompatActivity {
     RecyclerView doneRecycler;
     ArrayList<done_assessments_data> doneList ;
     done_assessments_adapter adapter;
-    String[] doneTitles = new String[]{"assessment 1" , "assessment 2" , " assessment 3"};
-    int[] doneImg = new int[]{R.drawable.image ,R.drawable.image ,R.drawable.image };
+    ArrayList<String> doneTitles = new ArrayList<>();
+    ArrayList<Integer> doneImg = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,22 +32,22 @@ public class done_assessments extends AppCompatActivity {
         }
         this.getSupportActionBar().setTitle("Done Assessments");
 
+        doneImg.add(R.drawable.image);
+        doneImg.add(R.drawable.image);
+        doneImg.add(R.drawable.image);
+
+        doneTitles.add("assessment 1");
+        doneTitles.add("assessment 2");
+        doneTitles.add("assessment 3");
+
         doneRecycler = findViewById(R.id.doneRecycler);
-        doneList= populateList();
-        adapter = new done_assessments_adapter(this , doneList);
+        adapter = new done_assessments_adapter(this, doneList, doneTitles, doneImg);
         doneRecycler.setAdapter(adapter);
         doneRecycler.setLayoutManager(new LinearLayoutManager(getApplicationContext(),
                 LinearLayoutManager.VERTICAL ,false));
 
     }
 /*
-    private void doneAssesProgress(View view) {
-        progressBar = (ProgressBar) findViewById(R.id.done_progBar);
-        int maxValue = progressBar.getMax();
-        int progressValue = progressBar.getProgress();
-        progressBar.isShown();
-    }
-*/
 private ArrayList<done_assessments_data> populateList(){
     ArrayList<done_assessments_data> list = new ArrayList<>();
     for(int i = 0 ; i< 3 ; i++)
@@ -58,5 +58,5 @@ private ArrayList<done_assessments_data> populateList(){
         list.add(model);
     }
     return list;
-}
+}*/
 }
