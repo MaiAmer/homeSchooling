@@ -31,12 +31,12 @@ public class discoverAssessmentsAdapter extends RecyclerView.Adapter<discoverAss
         void onGoToClicked(View itemView , int position);
     }
 */
-    // data is passed into the constructor
- /*   public discoverAssessmentsAdapter(Context context,ArrayList<discover_assessmnets_data> data)
+  // Skill_introData is passed into the constructor
+ /*   public discoverAssessmentsAdapter(Context context,ArrayList<discover_assessmnets_data> Skill_introData)
     {
         this.context=context;
         inflater = LayoutInflater.from(context);
-        this.data=data;
+        this.Skill_introData=Skill_introData;
     }
 */
   public discoverAssessmentsAdapter(Context context,ArrayList<String>titles
@@ -58,13 +58,13 @@ public class discoverAssessmentsAdapter extends RecyclerView.Adapter<discoverAss
         return new ViewHolder(view);
     }
 
-    // binds the data to the view
+    // binds the Skill_introData to the view
     @Override
     public void onBindViewHolder(ViewHolder holder, final int position) {
 
-    /*    holder.title.setText(data.get(position).getTitle());
-        holder.desc.setText(data.get(position).getDesc());
-        holder.img.setImageResource(data.get(position).getImgId());
+    /*    holder.title.setText(Skill_introData.get(position).getTitle());
+        holder.desc.setText(Skill_introData.get(position).getDesc());
+        holder.img.setImageResource(Skill_introData.get(position).getImgId());
         */
 
         holder.title.setText(titles.get(position));

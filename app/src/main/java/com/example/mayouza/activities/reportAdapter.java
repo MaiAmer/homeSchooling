@@ -12,7 +12,7 @@ import java.util.List;
 public class reportAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     private final int NUMBERS = 0, CARD = 1;
-    // Provide a direct reference to each of the views within a data item
+    // Provide a direct reference to each of the views within a Skill_introData item
     // Used to cache the views within the item layout for fast access
 
     public static class reportViewHolder extends RecyclerView.ViewHolder
@@ -89,7 +89,7 @@ public class reportAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
     }
 
 
-    //add a constructor to the custom adapter so that it has a handle to the data that the RecyclerView displays.
+    //add a constructor to the custom adapter so that it has a handle to the Skill_introData that the RecyclerView displays.
     List<report_data> theData;
     reportAdapter(List<report_data> theData){
         this.theData = theData;

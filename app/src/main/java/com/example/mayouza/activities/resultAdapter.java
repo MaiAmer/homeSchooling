@@ -14,7 +14,7 @@ import java.util.List;
 public class resultAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     public static final int CONGRATS = 0, SUGGESTED = 1;
 
-    //add a constructor to the custom adapter so that it has a handle to the data that the RecyclerView displays.
+    //add a constructor to the custom adapter so that it has a handle to the Skill_introData that the RecyclerView displays.
     List<result_data> theData;
 
     resultAdapter(List<result_data> theData) {
@@ -30,10 +30,10 @@ public class resultAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
         public congratsHolder(View itemView) {
             super(itemView);
 
-            congratsCard = (CardView) itemView.findViewById(R.id.congrats_card);
-            congrats = (TextView) itemView.findViewById(R.id.congrats);
-            congrats_text = (TextView) itemView.findViewById(R.id.congrats_text);
-            suggest_skill = (TextView) itemView.findViewById(R.id.suggested_text);
+            congratsCard = itemView.findViewById(R.id.congrats_card);
+            congrats = itemView.findViewById(R.id.congrats);
+            congrats_text = itemView.findViewById(R.id.congrats_text);
+            suggest_skill = itemView.findViewById(R.id.suggested_text);
 
         }
 
@@ -79,12 +79,12 @@ public class resultAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
 
         public suggesstHolder(View itemView) {
             super(itemView);
-            suggesstCard = (CardView) itemView.findViewById(R.id.suggested_Skills_Card);
-            suggestCard_img = (ImageView) itemView.findViewById(R.id.suggestCard_image);
+            suggesstCard = itemView.findViewById(R.id.suggested_Skills_Card);
+            suggestCard_img = itemView.findViewById(R.id.suggestCard_image);
             suggestCard_img.setImageResource(R.drawable.image);
-            suggestCard_title = (TextView) itemView.findViewById(R.id.suggestCard_title);
-            suggestcard_text = (TextView) itemView.findViewById(R.id.suggestcard_text);
-            go_btn_id = (Button) itemView.findViewById(R.id.go_btn);
+            suggestCard_title = itemView.findViewById(R.id.suggestCard_title);
+            suggestcard_text = itemView.findViewById(R.id.suggestcard_text);
+            go_btn_id = itemView.findViewById(R.id.go_btn);
 
         }
 
