@@ -1,25 +1,24 @@
 package com.example.mayouza.activities;
 
-import android.app.Activity;
 import android.content.Intent;
+import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-
 import android.view.View;
 import android.widget.TextView;
 
-public class main_assessments extends Activity {
+public class activity_main extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_assessments);
+        setContentView(R.layout.activity_main);
 
-        TextView doneTxt = findViewById(R.id.done_assessments);
-        TextView discoverTxt = findViewById(R.id.discover_assessments);
-        TextView overAllTxt = findViewById(R.id.overAll_Report);
-        TextView howToTxt = findViewById(R.id.howToDo_assessment);
+        TextView discoverSkills = findViewById(R.id.done_assessments);
+        TextView currentSkills = findViewById(R.id.discover_assessments);
+        TextView assessments = findViewById(R.id.overAll_Report);
+        TextView about = findViewById(R.id.howToDo_assessment);
 
-        doneTxt.setOnClickListener(new View.OnClickListener() {
+        discoverSkills.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), done_assessments.class);
@@ -27,7 +26,7 @@ public class main_assessments extends Activity {
             }
         });
 
-        discoverTxt.setOnClickListener(new View.OnClickListener() {
+        currentSkills.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), discover_assessments_main.class);
@@ -35,14 +34,14 @@ public class main_assessments extends Activity {
             }
         });
 
-        overAllTxt.setOnClickListener(new View.OnClickListener() {
+        assessments.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), report_assessment_main.class);
+                Intent intent = new Intent(getApplicationContext(), main_assessments.class);
                 startActivity(intent);
             }
         });
-        howToTxt.setOnClickListener(new View.OnClickListener() {
+        about.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), how_to.class);
