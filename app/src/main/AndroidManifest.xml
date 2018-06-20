@@ -106,7 +106,8 @@
                 <category android:name="android.intent.category.ALTERNATIVE" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity_onclick_discover_skills"></activity>
+        <activity android:name=".activity_onclick_discover_skills" />
+        <activity android:name=".activity_lessons"></activity>
     </application>
 
 </manifest>
