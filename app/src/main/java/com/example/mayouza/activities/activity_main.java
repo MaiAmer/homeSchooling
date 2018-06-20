@@ -13,15 +13,15 @@ public class activity_main extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TextView discoverSkills = findViewById(R.id.done_assessments);
-        TextView currentSkills = findViewById(R.id.discover_assessments);
-        TextView assessments = findViewById(R.id.overAll_Report);
-        TextView about = findViewById(R.id.howToDo_assessment);
+        TextView discoverSkills = findViewById(R.id.main_discover_skills);
+        TextView currentSkills = findViewById(R.id.main_current_skills);
+        TextView assessments = findViewById(R.id.main_assessments);
+        TextView about = findViewById(R.id.main_about_app);
 
         discoverSkills.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), done_assessments.class);
+                Intent intent = new Intent(getApplicationContext(), activity_discover_skills.class);
                 startActivity(intent);
             }
         });
