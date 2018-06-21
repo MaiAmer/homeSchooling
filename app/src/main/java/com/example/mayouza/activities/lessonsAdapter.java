@@ -40,6 +40,8 @@ public class lessonsAdapter extends
 
             // Return a new holder instance
             lessonsAdapter.lessonHolder viewHolder2 = new lessonsAdapter.lessonHolder(view2);
+
+            //TODO : add buttons and click listeners for them
             return viewHolder2;
 
         } else {  // Inflate the custom layout
