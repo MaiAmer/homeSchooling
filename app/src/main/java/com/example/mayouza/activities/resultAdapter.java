@@ -1,5 +1,6 @@
 package com.example.mayouza.activities;
 
+import android.content.Intent;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -77,7 +78,7 @@ public class resultAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
         TextView suggestcard_text;
         Button go_btn_id;
 
-        public suggesstHolder(View itemView) {
+        public suggesstHolder(final View itemView) {
             super(itemView);
             suggesstCard = itemView.findViewById(R.id.suggested_Skills_Card);
             suggestCard_img = itemView.findViewById(R.id.suggestCard_image);
@@ -85,7 +86,13 @@ public class resultAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             suggestCard_title = itemView.findViewById(R.id.suggestCard_title);
             suggestcard_text = itemView.findViewById(R.id.suggestcard_text);
             go_btn_id = itemView.findViewById(R.id.go_btn);
-
+            go_btn_id.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent i = new Intent(itemView.getContext(), Skill_intro.class);
+                    v.getContext().startActivity(i);
+                }
+            });
         }
 
         public CardView getSuggesstCard() {

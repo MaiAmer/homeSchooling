@@ -38,7 +38,6 @@ public class result_data {
         ArrayList<result_data> data = new ArrayList<>();
 
         // This method creates an ArrayList with the contents
-        for (int i = 1; i <= num; i++) {
             data.add(new result_data(R.id.congrats_card,"Congratulations","here the text of the description",
                     "Suggested skills for you "));
             data.add(new result_data(R.id.suggested_Skills_Card,R.drawable.image,"first skill",
@@ -50,7 +49,6 @@ public class result_data {
             data.add(new result_data(R.id.suggested_Skills_Card,R.drawable.image,"third skill",
                     "description about the skill" ,R.id.go_btn));
 
-        }
         return data;
     }
 }

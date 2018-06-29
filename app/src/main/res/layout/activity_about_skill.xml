@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/skill_tabs" />
+
+        <TextView
+            android:id="@+id/intoForSKill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:gravity="center"
+            android:text="Introduction About this skill" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardintroAboutSkill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp">
+
+            <TextView
+                android:id="@+id/textaboutskill"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="here we have intro about this skill" />
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/reqtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:gravity="center"
+            android:text="Requirements for this skill" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardReqForSkill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp">
+
+            <TextView
+                android:id="@+id/ReqForSkill"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="here we have write requirements" />
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/diffTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:gravity="center"
+            android:text="Difficulties in this skill" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardDifficulties"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp">
+
+            <TextView
+                android:id="@+id/textDifficulties"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="here we have write difficulties" />
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</ScrollView>

@@ -31,12 +31,10 @@ public class report_data {
         ArrayList<report_data> data = new ArrayList<>();
 
    // This method creates an ArrayList with the contents
-        for(int i=0 ; i< num ;i++ ) {
             data.add(new report_data(1,2,3));
             data.add(new report_data(R.id.skillsCard, "skill number 1", "20%", "efficiency 20%" ));
             data.add(new report_data(R.id.skillsCard, "skill number 2", "30%", "efficiency 10%"));
             data.add(new report_data(R.id.skillsCard, "skill number 3", "90%", "efficiency 15%"));
-        }
         return data;
     }
 }

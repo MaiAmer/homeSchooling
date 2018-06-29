@@ -1,15 +1,9 @@
 package com.example.mayouza.activities;
 
-import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.CardView;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.view.View;
-import android.widget.Adapter;
-import android.widget.ProgressBar;
-import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -47,16 +41,4 @@ public class done_assessments extends AppCompatActivity {
                 LinearLayoutManager.VERTICAL ,false));
 
     }
-/*
-private ArrayList<done_assessments_data> populateList(){
-    ArrayList<done_assessments_data> list = new ArrayList<>();
-    for(int i = 0 ; i< 3 ; i++)
-    {
-        done_assessments_data model = new done_assessments_data();
-        model.setDoneTitle(doneTitles[i]);
-        model.setImgId(doneImg[i]);
-        list.add(model);
-    }
-    return list;
-}*/
 }

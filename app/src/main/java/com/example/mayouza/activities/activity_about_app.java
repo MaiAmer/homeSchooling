@@ -4,37 +4,30 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.widget.Button;
 
 import java.util.ArrayList;
 
-public class Skill_intro extends AppCompatActivity {
-
+public class activity_about_app extends AppCompatActivity {
     RecyclerView recyclerView;
-    Button btn;
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
-    private ArrayList<Skill_introData> thedata;
+    private ArrayList<about_app_data> thedata;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.skill_intro_data);
+        setContentView(R.layout.activity_about_app);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        setContentView(R.layout.recycler_skill_intro);
-        // use a linear layout manager
+        setContentView(R.layout.recycler_about_app);
 
-        recyclerView = findViewById(R.id.skill_intro_recycler);
+        recyclerView = findViewById(R.id.recyclerAboutApp);
 
         mLayoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(mLayoutManager);
-        thedata = Skill_introData.getSampleArrayList();
+        thedata = about_app_data.getSampleArrayList();
         // specify an adapter
-        mAdapter = new Skill_introAdapter(this, thedata);
-        recyclerView.setAdapter(new Skill_introAdapter(this, thedata));
-        btn = findViewById(R.id.start_skill);
-
+        mAdapter = new aboutAppAdapter(thedata);
+        recyclerView.setAdapter(new aboutAppAdapter(thedata));
     }
-
 }

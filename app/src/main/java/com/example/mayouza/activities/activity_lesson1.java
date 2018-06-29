@@ -1,11 +1,9 @@
 package com.example.mayouza.activities;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -13,7 +11,6 @@ import static java.lang.String.valueOf;
 
 public class activity_lesson1 extends AppCompatActivity {
 
-    //TODO : edit this and its activity
     int currentCount = 1, totalCount = 3;
 
     TextView lessonTitle;
@@ -31,8 +28,7 @@ public class activity_lesson1 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lesson1);
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         lessonTitle = findViewById(R.id.lessonTitle);
         lessonText = findViewById(R.id.lessonTxt);
