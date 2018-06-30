@@ -1,0 +1,9 @@
+<application>
+  <component name="FileTypeManager" version="17">
+    <extensionMap>
+      <mapping pattern="bum.mp3" type="Android Nine-Patch" />
+      <mapping pattern="java2-2" type="CLASS" />
+      <mapping pattern="app2-2" type="CLASS" />
+    </extensionMap>
+  </component>
+</application>
