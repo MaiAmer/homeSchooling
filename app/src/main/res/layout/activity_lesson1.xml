@@ -16,6 +16,8 @@
         android:layout_gravity="center"
         android:layout_weight="2"
         android:gravity="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"
         android:text="title of lesson" />
 
     <android.support.v7.widget.CardView
@@ -26,6 +28,7 @@
 
         <TextView
             android:id="@+id/lessonTxt"
+            android:textSize="18sp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="16dp"

@@ -10,7 +10,7 @@
     <android.support.v7.widget.CardView
         android:id="@+id/lesson1Card"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="120dp"
         android:layout_margin="16dp">
 
         <TextView
@@ -18,14 +18,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
+            android:layout_gravity="center"
             android:gravity="center_horizontal"
             android:text="lesson title"
+            android:textColor="@color/colorAccent"
             android:textSize="24sp" />
     </android.support.v7.widget.CardView>
 
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="120dp"
         android:id="@+id/lesson2Card"
         android:layout_margin="16dp">
 
@@ -34,9 +36,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
+            android:layout_gravity="center"
             android:gravity="center_horizontal"
             android:text="lesson title"
+            android:textColor="@color/colorAccent"
             android:textSize="24sp" />
+
     </android.support.v7.widget.CardView>
 
     <android.support.v7.widget.CardView
@@ -48,10 +53,12 @@
         <TextView
             android:id="@+id/lessonTitle3"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="120dp"
             android:layout_margin="16dp"
-            android:gravity="center_horizontal"
+            android:layout_gravity="center"
             android:text="lesson title"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
             android:textSize="24sp" />
     </android.support.v7.widget.CardView>
 

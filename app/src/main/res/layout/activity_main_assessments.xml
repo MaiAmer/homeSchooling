@@ -22,6 +22,7 @@
         android:elevation="2dp"
         android:fontFamily="sans-serif-condensed"
         android:gravity="center"
+        android:textSize="24sp"
         android:text="@string/discover_assessments_txt"
         android:textColor="#db3340"/>
 
@@ -36,6 +37,7 @@
         android:layout_rowWeight="1"
         android:background="@drawable/rectangle"
         android:elevation="4dp"
+        android:textSize="24sp"
         android:fontFamily="sans-serif-condensed"
         android:gravity="center"
         android:text="@string/done_assessments_txt"
@@ -51,6 +53,7 @@
         android:layout_rowWeight="1"
         android:background="@drawable/rectangle"
         android:elevation="2dp"
+        android:textSize="24sp"
         android:fontFamily="sans-serif-condensed"
         android:gravity="center"
         android:text="@string/howToDo_assessments_txt"
@@ -64,6 +67,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_rowWeight="1"
+        android:textSize="24sp"
         android:background="@drawable/rectangle"
         android:elevation="2dp"
         android:fontFamily="sans-serif-condensed"
