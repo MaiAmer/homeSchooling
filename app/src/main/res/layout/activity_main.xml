@@ -3,26 +3,22 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_gravity="center"
     android:orientation="vertical">
 
-    <TextView
-        android:layout_width="match_parent"
+    <ImageView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:layout_marginTop="32dp"
-        android:gravity="center"
-        android:text="Home Schooly" />
-
+        android:layout_gravity="center"
+        android:src="@drawable/icon" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="40dp"
         android:orientation="horizontal">
-
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/mainDiscoverSkillsImg"
             android:layout_width="0dp"
-            android:layout_height="80dp"
+            android:layout_height="120dp"
             android:layout_margin="8dp"
             android:layout_weight="1"
             android:elevation="8dp"
@@ -31,7 +27,7 @@
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/mainCurrentSkillsImg"
             android:layout_width="0dp"
-            android:layout_height="80dp"
+            android:layout_height="120dp"
             android:layout_margin="8dp"
             android:layout_weight="1"
             android:elevation="8dp"
@@ -50,6 +46,7 @@
             android:layout_margin="8dp"
             android:layout_weight="1"
             android:gravity="center"
+            android:textColor="@color/primary_text"
             android:text="DiscoverSkills" />
 
 
@@ -60,6 +57,7 @@
             android:layout_margin="8dp"
             android:layout_weight="1"
             android:gravity="center"
+            android:textColor="@color/primary_text"
             android:text="Current Skills" />
     </LinearLayout>
 
@@ -72,7 +70,7 @@
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/mainAssessmentsImg"
             android:layout_width="0dp"
-            android:layout_height="80dp"
+            android:layout_height="120dp"
             android:layout_margin="8dp"
             android:layout_weight="1"
             android:elevation="8dp"
@@ -81,7 +79,7 @@
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/mainAboutAppImg"
             android:layout_width="0dp"
-            android:layout_height="80dp"
+            android:layout_height="120dp"
             android:layout_margin="8dp"
             android:layout_weight="1"
             android:elevation="8dp"
@@ -100,6 +98,7 @@
             android:layout_margin="8dp"
             android:layout_weight="1"
             android:gravity="center"
+            android:textColor="@color/primary_text"
             android:text="Main Assessments" />
 
 
@@ -110,7 +109,8 @@
             android:layout_margin="8dp"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="About Us" />
+            android:text="About Us"
+            android:textColor="@color/primary_text" />
     </LinearLayout>
 
 

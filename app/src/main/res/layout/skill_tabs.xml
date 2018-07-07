@@ -2,30 +2,34 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="@color/primary"
     android:orientation="horizontal">
 
     <Button
-        style="?android:attr/buttonBarButtonStyle"
         android:id="@+id/refrencebtn"
-        android:layout_width="0dp"
-        android:layout_weight="1"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="31dp"
         android:layout_height="50dp"
-        android:text="refrences" />
+        android:layout_weight="1"
+        android:text="refrences"
+        android:textColor="@color/icons" />
 
     <Button
-        style="?android:attr/buttonBarButtonStyle"
         android:id="@+id/aboutBTN"
-        android:layout_width="0dp"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="59dp"
         android:layout_height="50dp"
         android:layout_weight="1"
-        android:text="about skill" />
+        android:text="about skill"
+        android:textColor="@color/icons" />
 
     <Button
         style="?android:attr/buttonBarButtonStyle"
         android:id="@+id/lessonsbtn"
+        android:text="lessons"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_weight="1"
-        android:text="lessons" />
+        android:textColor="@color/icons" />
 
 </LinearLayout>

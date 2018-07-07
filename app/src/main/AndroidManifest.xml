@@ -8,7 +8,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+        android:theme="@style/AppTheme">
         <activity
             android:name=".main_assessments"
             android:label="Assessments"
@@ -68,7 +68,9 @@
                 <category android:name="android.intent.category.ALTERNATIVE" />
             </intent-filter>
         </activity>
-        <activity android:name=".assessment_cat1">
+        <activity
+            android:name=".assessment_cat1"
+            android:label="Assessment">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -85,7 +87,9 @@
                 <category android:name="android.intent.category.ALTERNATIVE" />
             </intent-filter>
         </activity>
-        <activity android:name=".Skill_intro">
+        <activity
+            android:name=".Skill_intro"
+            android:label="About this skill">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -99,56 +103,72 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity_discover_skills">
+        <activity
+            android:name=".activity_discover_skills"
+            android:label="discover skills">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.ALTERNATIVE" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity_onclick_discover_skills">
+        <activity
+            android:name=".activity_onclick_discover_skills"
+            android:label="content of this skill">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.ALTERNATIVE" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity_lessons">
+        <activity
+            android:name=".activity_lessons"
+            android:label="discover lessons">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.ALTERNATIVE" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity_lesson1">
+        <activity
+            android:name=".activity_lesson1"
+            android:label="lesson">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.ALTERNATIVE" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity_refrences">
+        <activity
+            android:name=".activity_refrences"
+            android:label="References">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.ALTERNATIVE" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity_about_app">
+        <activity
+            android:name=".activity_about_app"
+            android:label="About Us">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.ALTERNATIVE" />
             </intent-filter>
         </activity>
-        <activity android:name=".current_skills">
+        <activity
+            android:name=".current_skills"
+            android:label="Your current skills">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.ALTERNATIVE" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity_about_skill">
+        <activity
+            android:name=".activity_about_skill"
+            android:label="Information about this skill">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

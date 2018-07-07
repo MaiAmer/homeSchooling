@@ -20,6 +20,7 @@ public class activity_refrences extends AppCompatActivity {
     TextView courses;
     String refrencesOfSkill;
     String refrenceCourses;
+    int color;
     //  String[] refrencesList = new String[]{"refrence 1" , "refrence 2" , "refrence 3"};
     // String[] coursessList = new String[]{"course 1" , "course 2" , "course 3"};
 
@@ -46,8 +47,10 @@ public class activity_refrences extends AppCompatActivity {
         lessonsBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 Intent i = new Intent(getApplicationContext(), activity_lessons.class);
                 startActivity(i);
+                lessonsBtn.setBackgroundColor(getResources().getColor(R.color.primary_light));
             }
         });
         refrencesBtn.setOnClickListener(new View.OnClickListener() {
@@ -55,13 +58,18 @@ public class activity_refrences extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i = new Intent(getApplicationContext(), activity_refrences.class);
                 startActivity(i);
+                refrencesBtn.setBackgroundColor(getResources().getColor(R.color.primary_light));
+
             }
         });
+
         aboutSkillsBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(getApplicationContext(), activity_about_skill.class);
                 startActivity(i);
+                aboutSkillsBtn.setBackgroundColor(getResources().getColor(R.color.primary_light));
+
             }
         });
         courses.setText(refrenceCourses);

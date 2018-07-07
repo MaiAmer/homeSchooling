@@ -22,6 +22,7 @@ public class activity_lessons extends AppCompatActivity {
     Button lessonsBtn;
     Button refrencesBtn;
     Button aboutSkillsBtn;
+    int color;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,6 +53,8 @@ public class activity_lessons extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i = new Intent(getApplicationContext(), activity_lessons.class);
                 startActivity(i);
+                lessonsBtn.setBackgroundColor(getResources().getColor(R.color.primary_light));
+                color = 0;
             }
         });
         refrencesBtn.setOnClickListener(new View.OnClickListener() {
@@ -59,6 +62,9 @@ public class activity_lessons extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i = new Intent(getApplicationContext(), activity_refrences.class);
                 startActivity(i);
+                color = 2;
+                refrencesBtn.setBackgroundColor(getResources().getColor(R.color.primary_light));
+
             }
         });
 
@@ -67,6 +73,9 @@ public class activity_lessons extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i = new Intent(getApplicationContext(), activity_about_skill.class);
                 startActivity(i);
+                color = 1;
+                aboutSkillsBtn.setBackgroundColor(getResources().getColor(R.color.primary_light));
+
             }
         });
         lesson1card.setOnClickListener(new View.OnClickListener() {

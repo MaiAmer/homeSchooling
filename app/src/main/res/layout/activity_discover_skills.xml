@@ -8,15 +8,18 @@
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp">
+        android:id="@+id/discoverSkillCard"
+        android:layout_margin="16dp"
+        android:elevation="16dp">
 
         <TextView
+            android:textColor="@color/primary_text"
             android:id="@+id/skillTitles"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
             android:gravity="center_horizontal"
             android:text="Intro"
-            android:textSize="24sp" />
+            android:textSize="20sp" />
     </android.support.v7.widget.CardView>
 </LinearLayout>

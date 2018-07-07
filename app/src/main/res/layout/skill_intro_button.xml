@@ -6,9 +6,12 @@
 
     <Button
         android:id="@+id/start_skill"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:background="@color/accent"
+        android:elevation="8dp"
         android:layout_margin="8dp"
+        android:textColor="@color/icons"
         android:layout_gravity="center"
         android:text="Start learning" />
 </LinearLayout>

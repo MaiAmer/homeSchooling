@@ -48,6 +48,8 @@ public class activity_about_skill extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i = new Intent(getApplicationContext(), activity_lessons.class);
                 startActivity(i);
+                lessonsBtn.setBackgroundColor(getResources().getColor(R.color.primary_light));
+
             }
         });
         refrencesBtn.setOnClickListener(new View.OnClickListener() {
@@ -55,6 +57,9 @@ public class activity_about_skill extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i = new Intent(getApplicationContext(), activity_refrences.class);
                 startActivity(i);
+
+                refrencesBtn.setBackgroundColor(getResources().getColor(R.color.primary_light));
+
             }
         });
 
@@ -63,8 +68,11 @@ public class activity_about_skill extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i = new Intent(getApplicationContext(), activity_about_skill.class);
                 startActivity(i);
+                aboutSkillsBtn.setBackgroundColor(getResources().getColor(R.color.primary_light));
+
             }
         });
 
     }
+
 }

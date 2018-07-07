@@ -16,7 +16,6 @@
         android:layout_width="match_parent">
 
         <TextView
-            style="@style/textStyle"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:text="@string/introduction"
@@ -24,7 +23,6 @@
             android:textColor="#db3340"/>
 
         <TextView
-            style="@style/text2Style"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/intro"
@@ -33,7 +31,6 @@
             />
 
         <TextView
-            style="@style/textStyle"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:text="@string/facts"
@@ -43,7 +40,6 @@
 
 
         <TextView
-            style="@style/text2Style"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/facts"
