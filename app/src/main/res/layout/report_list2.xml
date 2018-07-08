@@ -6,10 +6,10 @@
 <android.support.v7.widget.CardView
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginStart="40dp"
-    android:layout_marginEnd="40dp"
-    android:layout_marginBottom="20dp"
-    android:layout_marginTop="20dp"
+    android:layout_marginBottom="16dp"
+    android:layout_marginEnd="32dp"
+    android:layout_marginStart="32dp"
+    android:layout_marginTop="16dp"
     android:elevation="8dp"
     android:layout_gravity="center"
     android:id="@+id/skillsCard"
@@ -22,19 +22,21 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="2"
+            android:layout_margin="8dp"
             android:text="classroom management"
             android:gravity="center"
-            android:layout_margin="10dp"
+            android:textColor="@color/primary_text"
             android:textSize="18sp"
             android:id="@+id/nameOfSkill"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="0dp"
             android:layout_weight="3"
+            android:layout_marginBottom="8dp"
             android:layout_gravity="center"
             android:background="@drawable/circle"
             android:text="20%"
-            android:layout_marginBottom="10dp"
+            android:textColor="@color/icons"
             android:gravity="center"
             android:textSize="15sp"
             android:id="@+id/percentOfSkill"/>
@@ -46,6 +48,7 @@
             android:gravity="center"
             android:text="efficiency : 20%"
             android:textSize="18sp"
+            android:textColor="@color/secondary_text"
             android:id="@+id/efficiencyPercent"/>
     </LinearLayout>
 </android.support.v7.widget.CardView>

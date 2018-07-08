@@ -39,7 +39,8 @@
                     android:gravity="center"
                     android:text="@string/about_assessment"
                     android:textSize="20sp"
-                    android:id="@+id/aboutAssessment"/>
+                    android:id="@+id/aboutAssessment"
+                    android:textColor="@color/primary_text" />
 
                 <ScrollView
                     android:layout_width="match_parent"
@@ -47,12 +48,13 @@
                     android:layout_weight="3">
 
                     <TextView
+                        android:layout_marginBottom="16dp"
                         android:id="@+id/txtAboutAssessment"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="20dp"
-                        android:layout_marginEnd="20dp"
-                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginStart="16dp"
+                        android:textColor="@color/secondary_text"
                         android:text="@string/text_about_Assessment"
                         android:textSize="15sp"/>
 
@@ -70,5 +72,7 @@
             android:layout_marginBottom="10dp"
             android:layout_marginTop="10dp"
             android:layout_weight="1"
+            android:background="@color/accent"
+            android:textColor="@color/icons"
             android:text="@string/start_assessment" />
     </LinearLayout>

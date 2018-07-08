@@ -4,8 +4,8 @@
     android:layout_height="wrap_content"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-    android:layout_marginTop="10dp"
-    android:layout_marginBottom="10dp">
+    android:layout_marginBottom="8dp"
+    android:layout_marginTop="8dp">
 
 <android.support.v7.widget.CardView
     android:id="@+id/done_card"
@@ -14,10 +14,10 @@
     android:layout_gravity="center"
     android:foreground="?attr/selectableItemBackground"
     android:elevation="16dp"
-    android:layout_marginBottom="20dp"
-    android:layout_marginEnd="40dp"
-    android:layout_marginStart="40dp"
-    android:layout_marginTop="20dp">
+    android:layout_marginBottom="16dp"
+    android:layout_marginEnd="32dp"
+    android:layout_marginStart="32dp"
+    android:layout_marginTop="16dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -34,11 +34,12 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="2"
-            android:layout_margin="10dp"
+            android:layout_margin="8dp"
             android:gravity="center"
+            android:textColor="@color/primary_text"
             android:text="first assessment "
             android:fontFamily="sans-serif"
-            android:textSize="30sp"
+            android:textSize="20sp"
             android:id="@+id/done_Text"
             />
 

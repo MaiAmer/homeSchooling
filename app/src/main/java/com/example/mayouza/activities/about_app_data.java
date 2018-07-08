@@ -46,8 +46,8 @@ public class about_app_data {
         items.add(new about_app_data("About Our App ", "Team Members"
                 , "we are a group of students want to encourage self and home learning and help parents " +
                 "to know about this kind of learning and improve themselves too", "Eng/ Mostafa yehya",
-                "Eng/Asmaa Ahmed", "Eng Mai Amer", "Eng/Alaa Ebrahim", R.drawable.image,
-                R.drawable.image, R.drawable.image, R.drawable.image));
+                "Eng/Asmaa Ahmed", "Eng Mai Amer", "Eng/Alaa Ebrahim", R.drawable.boy,
+                R.drawable.girl, R.drawable.girl, R.drawable.boy));
         return items;
     }
 }

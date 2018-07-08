@@ -33,7 +33,8 @@
                 android:layout_marginBottom="10dp"
                 tools:text="title of skill"
                 android:textAppearance="@style/TextAppearance.AppCompat.Title"
-                android:textColor="#fff" />
+                android:textColor="@color/icons"
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/suggestcard_text"
@@ -44,7 +45,7 @@
                 tools:text="description for skill"
                 android:ellipsize="end"
                 android:singleLine="true"
-                android:textColor="#111"
+                android:textColor="@color/primary_text"
                 android:textSize="20sp" />
 
             <Button
@@ -53,7 +54,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/suggestcard_text"
                 style="?android:attr/borderlessButtonStyle"
-                android:textColor="#111"
+                android:textColor="@color/primary_text"
                 android:text=" GO "
                 android:layout_alignParentEnd="true"/>
         </RelativeLayout>

@@ -12,7 +12,9 @@
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:gravity="center"
-        android:text="About our App" />
+        android:text="About our App"
+        android:textColor="@color/primary_text"
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/aboutApp"
@@ -32,6 +34,8 @@
         android:layout_gravity="center"
         android:layout_margin="8dp"
         android:gravity="center"
+        android:textColor="@color/primary_text"
+        android:textSize="20sp"
         android:text="Team Members" />
 
     <LinearLayout
@@ -46,7 +50,7 @@
             android:layout_margin="8dp"
             android:layout_weight="1"
             android:elevation="8dp"
-            android:src="@drawable/image" />
+            android:src="@drawable/boy" />
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/avatar2"
@@ -55,7 +59,7 @@
             android:layout_margin="8dp"
             android:layout_weight="1"
             android:elevation="8dp"
-            android:src="@drawable/image" />
+            android:src="@drawable/girl" />
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/avatar3"
@@ -64,7 +68,7 @@
             android:layout_margin="8dp"
             android:layout_weight="1"
             android:elevation="8dp"
-            android:src="@drawable/image" />
+            android:src="@drawable/girl" />
     </LinearLayout>
 
     <LinearLayout
@@ -112,7 +116,7 @@
             android:layout_gravity="center"
             android:layout_margin="8dp"
             android:elevation="8dp"
-            android:src="@drawable/image" />
+            android:src="@drawable/boy" />
 
         <TextView
             android:id="@+id/member4"

@@ -1,11 +1,9 @@
 package com.example.mayouza.activities;
 
 import android.os.Bundle;
-import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
 
 import java.util.ArrayList;
 
@@ -17,17 +15,9 @@ public class assessment_result extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_assessment_result);
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        this.setSupportActionBar(toolbar);
-        if(getSupportActionBar() != null){
-            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        }
-        this.getSupportActionBar().setHomeButtonEnabled(true);
+        setContentView(R.layout.recycler_assessment_result);
 
-        CollapsingToolbarLayout collapsingToolbar =
-           findViewById(R.id.collapsing_toolbar);
-        collapsingToolbar.setTitle("Assessment Result");
+        this.getSupportActionBar().setHomeButtonEnabled(true);
 
         recyclerView =findViewById(R.id.result_recycler);
 
@@ -48,5 +38,4 @@ public class assessment_result extends AppCompatActivity {
 
 
     }
-
 }

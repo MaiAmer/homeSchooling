@@ -20,6 +20,7 @@
                 android:layout_marginBottom="10dp"
                 android:gravity="center"
                 android:textSize="20sp"
+                android:textColor="@color/icons"
                 android:id="@+id/nDone"/>
             <TextView
                 android:layout_width="wrap_content"
@@ -28,6 +29,7 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginStart="15dp"
                 android:layout_marginBottom="10dp"
+                android:textColor="@color/primary_text"
                 android:textSize="18sp" />
         </LinearLayout>
 
@@ -43,6 +45,7 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginBottom="10dp"
                 android:gravity="center"
+                android:textColor="@color/icons"
                 android:textSize="20sp"
                 android:id="@+id/nEnrolled"/>
             <TextView
@@ -50,6 +53,7 @@
                 android:layout_height="wrap_content"
                 android:text="enrolled skills"
                 android:layout_marginStart="15dp"
+                android:textColor="@color/primary_text"
                 android:layout_marginBottom="10dp"
                 android:textSize="18sp"/>
         </LinearLayout>
@@ -63,6 +67,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/circle"
             android:text="5"
+            android:textColor="@color/icons"
             android:layout_marginStart="20dp"
             android:layout_marginBottom="10dp"
             android:gravity="center"
@@ -71,6 +76,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/primary_text"
             android:text="Mastered skills"
             android:layout_marginStart="15dp"
             android:layout_marginBottom="10dp"
@@ -80,10 +86,12 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
+            android:layout_gravity="start"
             android:text="Skills"
-            android:layout_margin="10dp"
-            android:textSize="40sp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/primary_text"
+            android:textSize="24sp"
             android:id="@+id/skills"/>
 
     </LinearLayout>
